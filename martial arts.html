@@ -1,0 +1,101 @@
+Understood! Here's the corrected version of your code with the original, full content intact:
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>CSS WEBSITE LAYOUT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+        .header {
+            background-color: pink;
+            padding: 20px;
+            text-align: center;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+            color: white;
+        }
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .column {
+            float: left;
+            width: 33.3%;
+            padding: 15px;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            font-size: 120%;
+            text-align: center;
+			height:100px;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Martial Arts</h1>
+    </div>
+    <div class="topnav">
+        <a href="#">Karate</a>
+        <a href="#">Taekwondo</a>
+        <a href="#">Kung-fu</a>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <h2>Karate</h2>
+            <p>Karate (空手) (/kəˈrɑːti/; Japanese pronunciation: [kaɾate] ⓘ; Okinawan pronunciation: [kaɽati]), also karate-do (空手道, Karate-dō), is a martial art developed in the Ryukyu Kingdom. It developed from the indigenous Ryukyuan martial arts (called te (手), "hand"; tī in Okinawan) under the influence of Chinese martial arts. While modern karate is primarily a striking art that uses punches and kicks, traditional karate training also employs throwing and joint locking techniques. A karate practitioner is called a karate-ka (空手家).
+
+            Beginning in the 1300s, early Chinese martial artists brought their techniques to Okinawa. Despite the Ryukyu Kingdom being turned into a puppet state by Japanese samurai in 1609, after the Invasion of Ryukyu, its cultural ties to China remained strong. Since Ryukyuans were banned from carrying swords under samurai rule, groups of young aristocrats created unarmed combat methods as a form of resistance, combining Chinese and local styles of martial arts. Training emphasized self-discipline. This blend of martial arts became known as kara-te 唐手, which translates to "Chinese hand." Initially, there were no uniforms, colored belts, ranking systems, or standardized styles. Many elements essential to modern karate were actually incorporated a century ago.
+
+            The Ryukyu Kingdom had been conquered by the Japanese Satsuma Domain and had become its vassal state since 1609, but was formally annexed to the Empire of Japan in 1879 as Okinawa Prefecture. The Ryukyuan samurai (Okinawan: samurē) who had been the bearers of karate lost their privileged position, and with it, karate was in danger of losing transmission. However, karate gradually regained popularity after 1905, when it began to be taught in schools in Okinawa. During the Taishō era (1912–1926), karate was introduced to mainland Japan by Gichin Funakoshi and Motobu Chōki. The ultranationalistic sentiment of the 1930s affected every aspect of Japanese culture. To make the imported martial art more relatable, Funakoshi incorporated elements from judo, such as the training uniforms, colored belts, and ranking systems. Karate's popularity was initially sluggish with little exposition but when a magazine reported a story about Motobu defeating a foreign boxer in Kyoto, karate rapidly became well known throughout Japan.</p>
+        </div>
+        <div class="column middle">
+            <h2>Taekwondo</h2>
+            <p>Taekwondo (/ˌtaɪkwɒnˈdoʊ, ˌtaɪˈkwɒndoʊ, ˌtɛkwənˈdoʊ/; Korean: 태권도; [t̪ʰɛ.k͈wʌ̹n.d̪o] ⓘ) is a Korean martial art and combat sport involving primarily kicking techniques and punching. "Taekwondo" can be translated as tae ("strike with foot"), kwon ("strike with hand"), and do ("the art or way"). In addition to its five tenets of courtesy, integrity, perseverance, self-control and indomitable spirit, the sport requires three physical skills: poomsae (품새, Form), kyorugi (겨루기, Sparring) and gyeokpa (격파, Breaking Technique).
+
+            Poomsae are patterns that demonstrate a range of kicking, punching and blocking techniques, kyorugi involves the kind of sparring seen in the Olympics, and gyeokpa is the art of breaking wooden boards. Taekwondo also sometimes involves the use of weapons such as swords and nunchucks (nunchaku). Taekwondo practitioners wear a uniform known as a dobok.
+
+            It is a combat sport which was developed during the 1940s and 1950s by Korean martial artists with experience in martial arts such as karate and Chinese martial arts.
+
+            The oldest governing body for taekwondo is the Korea Taekwondo Association (KTA), formed in 1959 through a collaborative effort by representatives from the nine original kwans, or martial arts schools, in Korea. The main international organizational bodies for taekwondo today are various branches of the International Taekwon-Do Federation (ITF), originally founded by Choi Hong-hi in 1966, and the partnership of the Kukkiwon and World Taekwondo (WT, formerly World Taekwondo Federation or WTF), founded in 1972 and 1973 respectively by the Korea Taekwondo Association. Gyeorugi ([kjʌɾuɡi]), a type of full-contact sparring, has been an Olympic event since 2000. In 2018, the South Korean government officially designated taekwondo as Korea's national martial art. At the Olympic and Paralympic level, taekwondo is governed by World Taekwondo.</p>
+        </div>
+        <div class="column side">
+            <h2>Kung-fu</h2>
+            <p>In general, kung fu (/ˌkʌŋˈfuː/ ⓘ or kungfu /ˌkʊŋˈfuː/; pinyin: gōngfu pronounced [kʊ́ŋfu]) refers to the Chinese martial arts also called quanfa. In China, it refers to any study, learning, or practice that requires patience, energy, and time to complete. In its original meaning, kung fu can refer to any discipline or skill achieved through hard work and practice, not necessarily martial arts (for example, the discipline of tea making is called the gongfu tea ceremony). The literal equivalent of "Chinese martial art" in Mandarin would be 中國武術 zhōngguó wǔshù.
+
+            There are many forms of kung fu, such as Shaolin kung fu, Wing Chun, and tai chi, and they are practiced all over the world. Each form of kung fu has its own principles and techniques, but is best known for its trickery and quickness. It is only in the late twentieth century that this term was used in relation to Chinese martial arts by the Chinese community. The Oxford English Dictionary defines the term "kung-fu" as "a primarily unarmed Chinese martial art resembling karate" and attributes the first use of "kung fu" in print to Punch magazine in 1966. This illustrates how the meaning of this term has been changed in English. The origin of this change can be attributed to the misunderstanding or mistranslation of the term through movie subtitles or dubbing. References to the concepts and use of Chinese martial arts can be found in popular culture. Historically, the influence of Chinese martial arts can be found in books and in the performance arts specific to Asia. Recently, those influences have extended to the movies and television that targets a much wider audience. As a result, Chinese martial arts have spread beyond their national roots and have a global appeal.
+
+            Martial arts play a prominent role in the literature genre known as wuxia. This type of fiction is based on Chinese concepts of chivalry, a separate martial arts society (武林; Wulin) and a central theme involving martial arts. Wuxia stories can be traced as far back as the 2nd and 3rd centuries BCE, becoming popular by the Tang dynasty and evolving into novel form by the Ming dynasty. This genre is still extremely popular in much of Asia and provides a major influence for the public perception of the martial arts.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>THANK YOU! VISIT AGAIN</p>
+    </div>
+</body>
+</html>
